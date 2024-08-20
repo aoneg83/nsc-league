@@ -7,10 +7,9 @@ const dockerBuild = process.env.DOCKER_BUILD
 const config = {
 	kit: {
 		adapter: dockerBuild ? node() : vercel({
-			runtime: 'nodejs16.x' // or 'nodejs18.x'
+			runtime: '16' // or '18'
 		}),
 	}
 };
 
 export default config;
-
