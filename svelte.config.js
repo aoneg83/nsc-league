@@ -5,9 +5,11 @@ const dockerBuild = process.env.DOCKER_BUILD;
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		adapter: dockerBuild ? node() : vercel(), // No runtime specification
-	}
+  kit: {
+    adapter: dockerBuild ? node() : vercel({
+      runtime: 'nodejs18.x' // Explicitly set to 'nodejs18.x'
+    }),
+  }
 };
 
 export default config;
