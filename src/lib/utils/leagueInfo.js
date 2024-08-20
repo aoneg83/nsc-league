@@ -1,5 +1,5 @@
 /*   STEP 1   */
-export const leagueID = "990195077601386496"; // your league ID
+export const leagueID = "1124816016140931072"; // your league ID
 export const leagueName = "National Scumbbag Conference"; // your league name
 export const dues = 100; // (optional) used in template constitution page
 export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
