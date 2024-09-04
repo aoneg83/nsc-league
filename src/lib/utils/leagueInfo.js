@@ -1,15 +1,15 @@
 /*   STEP 1   */
 export const leagueID = "1124816016140931072"; // your league ID
 export const leagueName = "National Scumbbag Conference"; // your league name
-export const dues = 100; // (optional) used in template constitution page
-export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
+export const dues = 250; // (optional) used in template constitution page
+export const dynasty = false; // true for dynasty leagues, false for redraft and keeper
 export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Founded in the vibrant heart of Las Vegas in 2010, the National Scumbag League brings together 12 dedicated football enthusiasts each year to compete for glory, bragging rights, and the prized Scumbag Trophy.</p>
-  <p>This league is all about the thrill of the game—building the best roster, making smart moves, and enjoying the camaraderie that comes with friendly competition. Over the years, we've experienced incredible matchups, unforgettable victories, and a shared passion for football that keeps us coming back season after season.</p>
-  <p>Are you ready to make your mark this season? Keep up with the latest standings, matchups, and league news right here. Dive into the action, and may the best team win!</p>
+  <p>Founded in Las Vegas back in 2010, the National Scumbag League brings together 12 football enthusiasts each year, not just for the glory and bragging rights, but let’s be honest—mostly for the draft and an excuse to get drunk.</p>
+  <p>Sure, the league is about building the best roster, making smart moves, and talking football, but let’s be honest—it's the draft day antics and the good times with friends that keep us coming back year after year. Over the seasons, we've seen epic matchups, unforgettable victories, and plenty of questionable decisions—on and off the field.</p>
+  <p>Ready to make your mark this season? Stay tuned for the latest standings, matchups, and league news. And as always—may the best Scumbag win!</p>
 `;
 
 /*   STEP 3   */
@@ -26,9 +26,8 @@ export const managers = [
       "roster": 3,  // (DEPRECATED! Don't use this anymore) ID of the roster that the manager manages (look at the order of the power rankings graph)
       "managerID": "598627870130106368",  // the user's manager ID, go to https://api.sleeper.app/v1/league/<your_league_id>/users to find user IDs (you can use older leagueIDs to find user IDs for managers that are no longer in the league)
       "name": "Turd Sandwiches",
-      // "tookOver": 2020, // (DEPRECATED! You don't need to use this anymore) (optional) used if a manager took over a team, delete this line or change to null otherwise
-      "location": "Brooklyn", // (optional)
-      "bio": "Lorem ipsum...",
+      "location": "Las Vegas", // (optional)
+      "bio": "Known for being often annoying, Alex Bruner makes wagers with just about everyone, but especially Tim. Every year, he somehow manages to win lunch from First, adding to his reputation as a master of small bets. Beyond the betting, Alex is the first two-time champ in league history and claims to have made the playoffs every season, solidifying his place as a top competitor. As co-commissioner, he does absolutely nothing—except help with the draft order. ",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "nyj", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
